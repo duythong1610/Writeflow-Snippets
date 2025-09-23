@@ -1,12 +1,13 @@
 {
   "name": "writeflow-snippets",
-  "displayName": "writeflow-snippets",
+  "displayName": "Writeflow Snippets",
   "description": "Snippets react typescript",
   "publisher": "WriteflowSnippets",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.104.0"
   },
+  "icon": "writeflow-icon.png",
   "categories": [
     "Snippets"
   ],
