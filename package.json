@@ -1,0 +1,21 @@
+{
+  "name": "writeflow-snippets",
+  "displayName": "writeflow-snippets",
+  "description": "Snippets react typescript",
+  "publisher": "WriteflowSnippets",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}

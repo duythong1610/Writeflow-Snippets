@@ -1,0 +1,30 @@
+{
+  "React TS Functional Component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface ${1:Props} {",
+      "  $2",
+      "}",
+      "",
+      "const ${3:ComponentName}: React.FC<${1:Props}> = ({ $4 }) => {",
+      "  return (",
+      "    <div>",
+      "      $5",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${3:ComponentName};"
+    ],
+    "description": "React TS Functional Component"
+  },
+  "useState Hook": {
+    "prefix": "us",
+    "body": [
+      "const [${1:state}, set${2:State}] = React.useState<${3:type}>(${4:initialValue});"
+    ],
+    "description": "React useState hook with TypeScript"
+  }
+}
