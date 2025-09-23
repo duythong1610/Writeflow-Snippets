@@ -1,8 +1,8 @@
 {
   "name": "writeflow-snippets",
-  "displayName": "Writeflow Snippets",
-  "description": "Snippets react typescript",
-  "publisher": "WriteflowSnippets",
+  "displayName": "Writeflow - React AntD CRUD Snippets",
+  "description": "Snippets for React + TypeScript + Ant Design + Axios CRUD",
+  "publisher": "Writeflow",
   "version": "0.0.3",
   "engines": {
     "vscode": "^1.104.0"
@@ -14,8 +14,32 @@
   "contributes": {
     "snippets": [
       {
+        "language": "typescript",
+        "path": "./snippets/axios-api.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/axios-service.json"
+      },
+      {
         "language": "typescriptreact",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/crud-hooks.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/crud-form.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/crud-modal.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/crud-table.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/crud-page.json"
       }
     ]
   }
