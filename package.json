@@ -3,7 +3,11 @@
   "displayName": "Writeflow - React AntD CRUD Snippets",
   "description": "Snippets for React + TypeScript + Ant Design + Axios CRUD",
   "publisher": "WriteflowSnippets",
-  "version": "0.0.6",
+  "version": "0.0.7",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/duythong1610/Writeflow-Snippets.git"
+  },
   "keywords": [
     "react",
     "typescript",

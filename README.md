@@ -14,7 +14,7 @@ src/
 ├── services/
 │   └── user.service.ts     # crudservice
 ├── hooks/
-│   └── useUserCRUD.ts      # crudhooks
+│   └── useUserCRUD.tsx     # crudhooks
 ├── components/
 │   ├── CrudTable.tsx       # crudtable
 │   └── CrudModal.tsx       # crudmodal
@@ -31,6 +31,8 @@ src/
 **Prefix:** `axiosapi`  
 **Description:** Creates pre-configured Axios instance with interceptors.
 
+![Axios API Demo](./demos/axiosapi.gif)
+
 **Features:**
 
 - Environment-based `baseURL` configuration
@@ -45,6 +47,8 @@ src/
 **Prefix:** `crudservice`  
 **Description:** Generates RESTful CRUD service with Axios.
 
+![CRUD Service Demo](./demos/crudservice.gif)
+
 **Features:**
 
 - TypeScript interfaces for entities and parameters
@@ -57,7 +61,6 @@ src/
 ### 3. CRUD Form Components
 
 **Description:** Collection of Ant Design `Form.Item` snippets.
-
 **Prefixes:**
 
 - `finput` → Input
@@ -81,6 +84,8 @@ src/
 **Prefix:** `crudhooks`  
 **Description:** Custom React hook for CRUD state management.
 
+![CRUD Hooks Demo](./demos/crudhooks.gif)
+
 **Features:**
 
 - Loading & error states per action (create, update, delete)
@@ -94,6 +99,8 @@ src/
 
 **Prefix:** `crudtable`  
 **Description:** Configurable Ant Design table with actions.
+
+![CRUD Table Demo](./demos/crudtable.gif)
 
 **Features:**
 
@@ -110,6 +117,8 @@ src/
 **Prefix:** `crudmodal`  
 **Description:** Generic modal for create/edit operations.
 
+![CRUD Modal Demo](./demos/crudmodal.gif)
+
 **Features:**
 
 - Various input types included (Input, Number, Select, DatePicker, Switch, Checkbox, Radio, Upload, TextArea)
@@ -123,6 +132,8 @@ src/
 
 **Prefix:** `crudpage`  
 **Description:** Full page integrating all snippets.
+
+![CRUD Page Demo](./demos/crudpage.gif)
 
 **Features:**
 
@@ -168,3 +179,10 @@ Type: `finput`, `fselect`, `ftextarea`, etc.
 - Reusable components (Table, Modal, Form, Hook)
 - Consistent structure for React + Ant Design apps
 - Type-safe and extendable
+- Visual documentation with GIF demos
+
+---
+
+## License
+
+MIT License - feel free to use in your projects!

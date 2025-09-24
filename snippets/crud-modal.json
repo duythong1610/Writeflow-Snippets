@@ -56,6 +56,7 @@
       "",
       "  return (",
       "    <Modal",
+      "      centered",
       "      title={title || `${mode === 'create' ? 'Add New' : 'Edit'} ${3:Item}`} ",
       "      open={open}",
       "      onCancel={handleCancel}",
@@ -141,7 +142,9 @@
       "      </Form>",
       "    </Modal>",
       "  );",
-      "};"
+      "};",
+      "",
+      "export default ${2:CrudModal};"
     ],
     "description": "CRUD Modal Form component"
   }
