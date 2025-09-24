@@ -1,6 +1,6 @@
 {
   "RESTful Service with Axios (baseURL)": {
-    "prefix": "axios-service",
+    "prefix": "crudservice",
     "body": [
       "import api from '../lib/api';",
       "",

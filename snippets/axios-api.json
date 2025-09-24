@@ -1,6 +1,6 @@
 {
   "Axios API Instance (baseURL + interceptors)": {
-    "prefix": "axios-api",
+    "prefix": "axiosapi",
     "body": [
       "import axios from 'axios';",
       "",

@@ -1,0 +1,240 @@
+{
+  "Form Item with Input": {
+    "prefix": "finput",
+    "body": [
+      "<Form.Item",
+      "  name=\"${1:fieldName}\"",
+      "  label=\"${2:Label}\"",
+      "  rules={[",
+      "    { required: ${3:true}, message: '${4:Please input your ${2:label}!}' }",
+      "  ]}",
+      ">",
+      "  <Input placeholder=\"${5:Enter ${2:label}}\" />",
+      "</Form.Item>"
+    ],
+    "description": "Form Item with Input component"
+  },
+
+  "Form Item with Select": {
+    "prefix": "fselect",
+    "body": [
+      "<Form.Item",
+      "  name=\"${1:fieldName}\"",
+      "  label=\"${2:Label}\"",
+      "  rules={[",
+      "    { required: ${3:true}, message: '${4:Please select ${2:label}!}' }",
+      "  ]}",
+      ">",
+      "  <Select placeholder=\"${5:Select ${2:label}}\">",
+      "    <Select.Option value=\"${6:value1}\">${7:Option 1}</Select.Option>",
+      "    <Select.Option value=\"${8:value2}\">${9:Option 2}</Select.Option>",
+      "  </Select>",
+      "</Form.Item>"
+    ],
+    "description": "Form Item with Select component"
+  },
+
+  "Form Item with TextArea": {
+    "prefix": "ftextarea",
+    "body": [
+      "<Form.Item",
+      "  name=\"${1:fieldName}\"",
+      "  label=\"${2:Label}\"",
+      "  rules={[",
+      "    { required: ${3:false}, message: '${4:Please input your ${2:label}!}' }",
+      "  ]}",
+      ">",
+      "  <Input.TextArea",
+      "    placeholder=\"${5:Enter ${2:label}}\"",
+      "    rows={${6:4}}",
+      "    maxLength={${7:500}}",
+      "    showCount",
+      "  />",
+      "</Form.Item>"
+    ],
+    "description": "Form Item with TextArea component"
+  },
+
+  "Form Item with Switch": {
+    "prefix": "fswitch",
+    "body": [
+      "<Form.Item",
+      "  name=\"${1:fieldName}\"",
+      "  label=\"${2:Label}\"",
+      "  valuePropName=\"checked\"",
+      ">",
+      "  <Switch />",
+      "</Form.Item>"
+    ],
+    "description": "Form Item with Switch component"
+  },
+
+  "Form Item with Checkbox": {
+    "prefix": "fcheckbox",
+    "body": [
+      "<Form.Item",
+      "  name=\"${1:fieldName}\"",
+      "  valuePropName=\"checked\"",
+      ">",
+      "  <Checkbox>${2:Checkbox Text}</Checkbox>",
+      "</Form.Item>"
+    ],
+    "description": "Form Item with Checkbox component"
+  },
+
+  "Form Item with Radio Group": {
+    "prefix": "fradio",
+    "body": [
+      "<Form.Item",
+      "  name=\"${1:fieldName}\"",
+      "  label=\"${2:Label}\"",
+      "  rules={[",
+      "    { required: ${3:true}, message: '${4:Please select ${2:label}!}' }",
+      "  ]}",
+      ">",
+      "  <Radio.Group>",
+      "    <Radio value=\"${5:value1}\">${6:Option 1}</Radio>",
+      "    <Radio value=\"${7:value2}\">${8:Option 2}</Radio>",
+      "    <Radio value=\"${9:value3}\">${10:Option 3}</Radio>",
+      "  </Radio.Group>",
+      "</Form.Item>"
+    ],
+    "description": "Form Item with Radio Group component"
+  },
+
+  "Form Item with Upload": {
+    "prefix": "fupload",
+    "body": [
+      "<Form.Item",
+      "  name=\"${1:fieldName}\"",
+      "  label=\"${2:Label}\"",
+      "  valuePropName=\"fileList\"",
+      "  getValueFromEvent={(e) => {",
+      "    if (Array.isArray(e)) return e;",
+      "    return e?.fileList;",
+      "  }}",
+      ">",
+      "  <Upload",
+      "    name=\"${3:file}\"",
+      "    action=\"${4:/upload}\"",
+      "    listType=\"${5:picture-card}\"",
+      "    maxCount={${6:1}}",
+      "  >",
+      "    <div>",
+      "      <PlusOutlined />",
+      "      <div style={{ marginTop: 8 }}>${7:Upload}</div>",
+      "    </div>",
+      "  </Upload>",
+      "</Form.Item>"
+    ],
+    "description": "Form Item with Upload component"
+  },
+
+  "Form Item with DatePicker": {
+    "prefix": "fdatepicker",
+    "body": [
+      "<Form.Item",
+      "  name=\"${1:fieldName}\"",
+      "  label=\"${2:Label}\"",
+      "  rules={[",
+      "    { required: ${3:true}, message: '${4:Please select ${2:label}!}' }",
+      "  ]}",
+      ">",
+      "  <DatePicker",
+      "    placeholder=\"${5:Select date}\"",
+      "    style={{ width: '100%' }}",
+      "    format=\"${6:YYYY-MM-DD}\"",
+      "  />",
+      "</Form.Item>"
+    ],
+    "description": "Form Item with DatePicker component"
+  },
+
+  "Form Item with RangePicker": {
+    "prefix": "frangepicker",
+    "body": [
+      "<Form.Item",
+      "  name=\"${1:fieldName}\"",
+      "  label=\"${2:Label}\"",
+      "  rules={[",
+      "    { required: ${3:true}, message: '${4:Please select ${2:label}!}' }",
+      "  ]}",
+      ">",
+      "  <DatePicker.RangePicker",
+      "    placeholder={['${5:Start date}', '${6:End date}']}",
+      "    style={{ width: '100%' }}",
+      "    format=\"${7:YYYY-MM-DD}\"",
+      "  />",
+      "</Form.Item>"
+    ],
+    "description": "Form Item with RangePicker component"
+  },
+
+  "Form Item with InputNumber": {
+    "prefix": "finputnumber",
+    "body": [
+      "<Form.Item",
+      "  name=\"${1:fieldName}\"",
+      "  label=\"${2:Label}\"",
+      "  rules={[",
+      "    { required: ${3:true}, message: '${4:Please input ${2:label}!}' }",
+      "  ]}",
+      ">",
+      "  <InputNumber",
+      "    placeholder=\"${5:Enter ${2:label}}\"",
+      "    style={{ width: '100%' }}",
+      "    min={${6:0}}",
+      "    max={${7:1000}}",
+      "    precision={${8:2}}",
+      "  />",
+      "</Form.Item>"
+    ],
+    "description": "Form Item with InputNumber component"
+  },
+
+  "Form Item with Password Input": {
+    "prefix": "fpassword",
+    "body": [
+      "<Form.Item",
+      "  name=\"${1:password}\"",
+      "  label=\"${2:Password}\"",
+      "  rules={[",
+      "    { required: true, message: '${3:Please input your password!}' },",
+      "    { min: ${4:6}, message: '${5:Password must be at least 6 characters!}' }",
+      "  ]}",
+      ">",
+      "  <Input.Password",
+      "    placeholder=\"${6:Enter password}\"",
+      "    visibilityToggle",
+      "  />",
+      "</Form.Item>"
+    ],
+    "description": "Form Item with Password Input component"
+  },
+
+  "Select Option": {
+    "prefix": "sopt",
+    "body": ["<Select.Option value=\"${1:value}\">${2:Label}</Select.Option>"],
+    "description": "Select Option component"
+  },
+
+  "useForm Hook": {
+    "prefix": "useform",
+    "body": [
+      "const [form] = Form.useForm<${1:FormData}>();",
+      "",
+      "// Reset form",
+      "// form.resetFields();",
+      "",
+      "// Set values",
+      "// form.setFieldsValue({ ${2:field}: ${3:value} });",
+      "",
+      "// Get values",
+      "// const values = form.getFieldsValue();",
+      "",
+      "// Validate",
+      "// form.validateFields().then(values => console.log(values));"
+    ],
+    "description": "useForm hook with common methods"
+  }
+}
