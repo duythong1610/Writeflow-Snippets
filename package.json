@@ -3,7 +3,7 @@
   "displayName": "Writeflow - React AntD CRUD Snippets",
   "description": "Snippets for React + TypeScript + Ant Design + Axios CRUD",
   "publisher": "WriteflowSnippets",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "keywords": [
     "react",
     "typescript",
@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "engines": {
-    "vscode": "^1.104.0"
+    "vscode": "^1.70.0"
   },
   "icon": "writeflow-icon.png",
   "categories": [
@@ -41,6 +41,10 @@
       {
         "language": "typescriptreact",
         "path": "./snippets/crud-modal.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/crud-form.json"
       },
       {
         "language": "typescriptreact",
